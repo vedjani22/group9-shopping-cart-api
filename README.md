@@ -76,12 +76,12 @@ POST /favorites
 
 # Roles and Responsibilities
 
-# ved jani 
+# Ved Jani 
 - Create GitHub repository
 - Create project structure
 - Configure TypeScript and Express
 
-# jaspreet 
+# Jaspreet 
 - Create Jira Kanban board
 - Assign tasks to all members
 - Manage workflow organization
