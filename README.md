@@ -49,56 +49,56 @@ The API manages:
 
 # Planned API Routes
 
-## User Routes
+# User Routes
 GET /users  
 GET /users/:id  
 POST /users  
 
-## Product Routes
+# Product Routes
 GET /products  
 GET /products/:id  
 POST /products  
 PUT /products/:id  
 DELETE /products/:id  
 
-## Cart Routes
+# Cart Routes
 GET /cart  
 POST /cart  
 DELETE /cart/:id  
 
-## Order Routes
+# Order Routes
 GET /orders  
 POST /orders  
 
-## Favorites Routes
+# Favorites Routes
 GET /favorites  
 POST /favorites  
 
 # Roles and Responsibilities
 
-## Swet Patel
+# ved jani 
 - Create GitHub repository
-- Configure TypeScript and Express
 - Create project structure
-- Manage README documentation
+- Configure TypeScript and Express
 
-## Member 2
+# jaspreet 
 - Create Jira Kanban board
 - Assign tasks to all members
 - Manage workflow organization
 
-## Member 3
+# Swet Pravinbhai Patel
+- Manage README documentation
 - Plan API routes
 - Design frontend structure
 - Prepare presentation/demo
 
 # Jira Workflow
-## Columns
+# Columns
 - To Do
 - In Progress
 - Done
 
-## Example Tasks
+# Example Tasks
 - Create repository
 - Initialize TypeScript
 - Install Express
