@@ -15,7 +15,7 @@ The platform helps students save money and connect with other students safely in
 This project uses:
 - Node.js
 - TypeScript
-- Express.js
+- Express.js 
 - REST API architecture
 
 # Frontend Idea
