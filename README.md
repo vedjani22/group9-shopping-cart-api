@@ -93,6 +93,13 @@ POST /favorites
 - Prepare presentation/demo
 
 # Jira Workflow
+# Jira Board
+
+Our team uses Jira Kanban Board for project management and task tracking.
+
+Jira Link:
+[https://your-jira-link-here](https://sidhujass688-1779987024198.atlassian.net/jira/software/projects/KAN/list?jql=project+%3D+KAN+ORDER+BY+cf%5B10019%5D+ASC&atlOrigin=eyJpIjoiMDNkMGRiMjJjNWY4NDI3ZTllMzVlMjA2ZTI3Yzg1NzQiLCJwIjoiaiJ9)
+
 # Columns
 - To Do
 - In Progress
