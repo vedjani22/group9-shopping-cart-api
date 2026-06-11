@@ -1,123 +1,31 @@
-# shopping-cart-api
-Shopping Cart REST API using TypeScript and Express
+# Group 9 Shopping Cart API
 
-## Group Members
-1. Swet Pravinbhai Patel 9028970
-2. Ved jani 9048412
-3. jaspreet 
+## Run Project
 
-# Project Description
+```bash
+npm install
+npm run dev
+```
 
-Smart Student Marketplace is a REST API project designed for college students to buy, sell, and trade used academic and personal items such as textbooks, laptops, calculators, and study materials.
+Open:
 
-The platform helps students save money and connect with other students safely inside the college community.
+```text
+http://localhost:3000
+```
 
-This project uses:
-- Node.js
-- TypeScript
-- Express.js 
-- REST API architecture
+## API Routes
 
-# Frontend Idea
+- GET /api
+- GET /products
+- GET /products/:id
+- POST /products
+- PUT /products/:id
+- DELETE /products/:id
+- GET /juicereport
+- GET /products/id_juice/:id_juice
 
-The frontend will contain:
-- Home page with listed products
-- Login/Register page
-- Product details page
-- Shopping cart page
-- Student dashboard
-- Favorites/wishlist section
+## Technology
 
-Students can:
-- Add products
-- Add items to cart
-- Save favorites
-- Checkout items
-- Contact sellers
-
-# Data Managed
-
-The API manages:
-
-- Users
-- Products
-- Categories
-- Shopping carts
-- Orders
-- Favorites
-- Messages between students
-
-# Planned API Routes
-
-# User Routes
-GET /users  
-GET /users/:id  
-POST /users  
-
-# Product Routes
-GET /products  
-GET /products/:id  
-POST /products  
-PUT /products/:id  
-DELETE /products/:id  
-
-# Cart Routes
-GET /cart  
-POST /cart  
-DELETE /cart/:id  
-
-# Order Routes
-GET /orders  
-POST /orders  
-
-# Favorites Routes
-GET /favorites  
-POST /favorites  
-
-# Roles and Responsibilities
-
-# Ved Jani 
-- Create GitHub repository
-- Create project structure
-- Configure TypeScript and Express
-
-# Jaspreet 
-- Create Jira Kanban board
-- Assign tasks to all members
-- Manage workflow organization
-
-# Swet Pravinbhai Patel
-- Manage README documentation
-- Plan API routes
-- Design frontend structure
-- Prepare presentation/demo
-
-# Jira Workflow
-# Jira Board
-
-Our team uses Jira Kanban Board for project management and task tracking.
-
-Jira Link:
-[https://your-jira-link-here](https://sidhujass688-1779987024198.atlassian.net/jira/software/projects/KAN/list?jql=project+%3D+KAN+ORDER+BY+cf%5B10019%5D+ASC&atlOrigin=eyJpIjoiMDNkMGRiMjJjNWY4NDI3ZTllMzVlMjA2ZTI3Yzg1NzQiLCJwIjoiaiJ9)
-
-# Columns
-- To Do
-- In Progress
-- Done
-
-# Example Tasks
-- Create repository
-- Initialize TypeScript
-- Install Express
-- Create API routes
-- Design frontend pages
-- Write documentation
-- Prepare presentation
-
-# Technologies Used
-
-- Node.js
-- Express.js
-- TypeScript
-- GitHub
-- Jira
+- Frontend: HTML, CSS, JavaScript
+- Backend: TypeScript + Express
+- Database Plan: MySQL
