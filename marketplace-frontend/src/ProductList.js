@@ -30,6 +30,19 @@ function ProductList() {
     }
   }
 
+  async function handleAddToCart(productId) {
+    try {
+      await api.post("/cart", {
+        user_id: 7,
+        product_id: productId,
+        quantity: 1,
+      });
+      setMessage("Added to cart.");
+    } catch (err) {
+      setMessage("Could not add to cart. You may need to log in again.");
+    }
+  }
+
   return (
     <div style={{ padding: "20px" }}>
       <div
@@ -73,8 +86,14 @@ function ProductList() {
           >
             Edit
           </button>
-          <button onClick={() => handleDelete(product.product_id)}>
+          <button
+            onClick={() => handleDelete(product.product_id)}
+            style={{ marginRight: "8px" }}
+          >
             Delete
+          </button>
+          <button onClick={() => handleAddToCart(product.product_id)}>
+            Add to Cart
           </button>
         </div>
       ))}

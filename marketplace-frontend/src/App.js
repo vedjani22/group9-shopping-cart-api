@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import ProductList from "./ProductList";
 import ProductForm from "./ProductForm";
 import ProtectedRoute from "./ProtectedRoute";
+import CartPage from "./CartPage";
 
 function App() {
   return (
@@ -35,6 +36,14 @@ function App() {
           element={
             <ProtectedRoute>
               <ProductForm />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            <ProtectedRoute>
+              <CartPage />
             </ProtectedRoute>
           }
         />

@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -19,6 +19,11 @@ function Navbar() {
       }}
     >
       <strong>Smart Student Marketplace</strong>
+      {token && (
+        <Link to="/cart" style={{ marginLeft: "20px" }}>
+          Cart
+        </Link>
+      )}
       {token && (
         <button onClick={handleLogout} style={{ padding: "6px 12px" }}>
           Logout
