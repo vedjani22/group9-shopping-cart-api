@@ -1,5 +1,6 @@
 import { Router } from "express";
 import pool from "../db";
+import verifyToken from "../authMiddleware";
 
 const router = Router();
 
@@ -19,7 +20,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/", verifyToken, async (req, res) => {
   try {
     const { user_id, product_id, total_amount, order_date } = req.body;
     const [result] = await pool.query(
@@ -32,7 +33,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", async (req, res) => {
+router.put("/:id", verifyToken, async (req, res) => {
   try {
     const { total_amount, order_date } = req.body;
     const [result]: any = await pool.query(
@@ -50,7 +51,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", verifyToken, async (req, res) => {
   try {
     const [result]: any = await pool.query(
       "DELETE FROM orders WHERE order_id = ?",
